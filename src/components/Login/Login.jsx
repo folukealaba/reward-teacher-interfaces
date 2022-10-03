@@ -1,13 +1,46 @@
-import React from "react";
+import React,{useState} from "react";
 import { LoginStyles } from "./LoginStyles";
 import RewardLogo from "../../assets/RewardLogo.svg";
 import { Link } from "react-router-dom";
 import Line from "../../assets/Line.svg";
 import Google from "../../assets/Google.svg";
 import { useNavigate } from "react-router-dom";
+import axiosInstance from "../../api/axiosInstance";
+
+
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
+
+
+  const handleEmail = (e) =>{
+    e.preventDefault();
+    setEmail(e.target.value);
+  }
+
+
+  const handlePassword = (e) =>{
+    e.preventDefault();
+    setPassword(e.target.value);
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const data = {
+        email, password
+      };
+      const response = await axiosInstance.post("/api/auth/v1/login", data);
+      console.log(response);
+    }catch(error){
+      console.log(error);
+    }
+  };
+
 
   const navigateToDashboard = () => {
     navigate("/dashboard");
@@ -21,12 +54,12 @@ const Login = () => {
       </div>
       <div className="login">
         <h3>Login as an old Student</h3>
-        <form onSubmit={navigateToDashboard}>
+        <form onSubmit={handleSubmit}>
           <label htmlFor="email">Email</label>
-          <input type="text" id="email" placeholder="Enter your email" />
+          <input type="email" id="email" onChange={handleEmail} placeholder="Enter your email" />
           <label htmlFor="email">Password</label>
-          <input type="text" id="password" placeholder="Enter your password" />
-          <h4>Forgot password?</h4>
+          <input type="text" id="password" onChange={handlePassword} placeholder="Enter your password" />
+          <Link id="link">Forgot password?</Link>
           <input id="login-btn" type="submit" value="Login" />
         </form>
         <div className="or">

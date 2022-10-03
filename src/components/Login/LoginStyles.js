@@ -21,8 +21,7 @@ export const LoginStyles = styled.div`
 
   .logo h2 {
     font-weight: 500;
-    font-size: 29px;
-    word-spacing: 2px;
+    font-size: 24px;
     color: #55a630;
     margin-top: 8px;
   }
@@ -35,7 +34,7 @@ export const LoginStyles = styled.div`
 
   .login h3 {
     font-weight: 600;
-    font-size: 26px;
+    font-size: 18px;
     color: #21334f;
     margin-bottom: 6%;
   }
@@ -46,12 +45,12 @@ export const LoginStyles = styled.div`
     margin: 2% 0%;
     border: 1px solid #ccc;
     text-indent: 1.2rem;
-    font-size: 1rem;
+    font-size: 12px;
   }
 
   form label {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 12px;
     color: #21334f;
   }
 
@@ -73,16 +72,16 @@ export const LoginStyles = styled.div`
     color: #c4c4c4;
   }
 
-  form h4 {
-    font-weight: 400;
-    font-size: 17px;
-    color: #21334f;
+  #link {
+    text-decoration: none;
+    font-size: 12px;
+    color: #21334F;
   }
 
   #login-btn {
     background: #55a630;
     color: #fff;
-    font-size: 18px;
+    font-size: 12px;
     height: 7vh;
     border: 1px solid #ccc;
   }
@@ -94,8 +93,12 @@ export const LoginStyles = styled.div`
     margin: 4% 0%;
   }
 
+  .or p{
+    font-size: 12px;
+  }
+
   #line {
-    width: 100%;
+    width: 44.5%;
   }
 
   #google-btn {
@@ -105,13 +108,17 @@ export const LoginStyles = styled.div`
     align-items: center;
     gap: 2.5%;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 12px;
     color: #21334f;
     background-color: #fff;
     word-spacing: 2px;
     border: 1px solid #ccc;
     height: 6vh;
     margin-bottom: 7%;
+  }
+
+  #google-btn img{
+    width: 5%;
   }
 
   .account {
@@ -122,11 +129,12 @@ export const LoginStyles = styled.div`
 
   #first-paragraph {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     color: #21334f;
   }
 
   #second-paragraph{
     color: #80B918;
+    font-size: 12px;
   }
 `;

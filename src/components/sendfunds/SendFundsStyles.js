@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const SendFundsStyles = styled.div`
   /* border: 2px solid blue; */
   width: 100%;
+  /* height: 100%; */
   display: flex;
   padding-top: 3%;
-  /* gap: 2%; */
-  /* background: #5FBB46; */
+  height: 444px;
   background: rgb(87, 187, 67);
   background: linear-gradient(
     90deg,
@@ -15,9 +15,8 @@ export const SendFundsStyles = styled.div`
   );
 
   .left-side {
-    /* border: 4px solid black; */
-    margin: 5% 10%;
-    width: 40%;
+    margin: 4% 10%;
+    width: 50%;
     /* background: #FBBC05; */
     /* filter: blur(400px); */
   }
@@ -26,8 +25,8 @@ export const SendFundsStyles = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 50px;
-    line-height: 58px;
+    font-size: 2.5rem;
+    line-height: 48px;
     color: #ffffff;
     margin-bottom: 5.5%;
   }
@@ -36,41 +35,41 @@ export const SendFundsStyles = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    word-spacing: 2px;
+    font-size: 1rem;
+    line-height: 24px;
     color: #ffffff;
     margin-bottom: 5.5%;
+    width: 450px;
+height: 96px;
   }
 
-  .left-side button {
-    font-family: "Inter";
-    font-style: normal;
+  .left-side-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 35%;
+    height: 10%;
+    background: #ffffff;
+    border-radius: 4px;
+    /* border: 2px solid red; */
+  }
+
+  .left-side-btn button {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 17px;
+    font-size: 14px;
     color: #80b918;
-    padding: 3% 8%;
     border: none;
-    border-radius: 6px;
-    cursor: pointer;
+    background: #ffffff;
   }
 
   .right-side {
-    /* border: 3px solid black; */
-    width: 55%;
-    margin-right: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: #4285F4;
-    filter: blur(300px); */
+    width:40%;
   }
 
-  .right-side img {
-    width: 100%;
-    /* border: 2px solid red; */
-    margin-right: 7%;
-    margin-top: 2%;
-  }
+  /* .right-side img {
+  
+  } */
 `;

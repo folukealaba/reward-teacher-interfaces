@@ -6,12 +6,14 @@ import NavBar from '../../components/navbar/NavBar';
 import Partners from '../../components/partners/Partners';
 import SendFunds from '../../components/sendfunds/SendFunds';
 import Teachersreward from '../../components/teachersreward/Teachersreward';
+// import Confetti from '../../components/Confetti/Confetti'
 
 const LandingPage = () => {
   return (
     <div>
         <NavBar />
         <Banner />
+        {/* <Confetti/> */}
         <Description />
         <SendFunds />
         <Teachersreward />

@@ -7,6 +7,7 @@ export const FooterStyles = styled.div`
   padding: 32px 24px;
   /* gap: 49px; */
   background: #000000;
+  width:100%;
 
   .footer-logo {
     /* border: 2px solid yellow; */
@@ -14,11 +15,15 @@ export const FooterStyles = styled.div`
     width: 26%;
     justify-content: center;
     margin-bottom: 5%;
-    margin-left: 7%;
+    margin-left: 9%;
   }
 
   .footer-logo img {
     width: 60%;
+  }
+
+  .footer-logo h2{
+    font-size: 24px;
   }
 
   #divider {
@@ -46,7 +51,7 @@ export const FooterStyles = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 100;
-    font-size: 21px;
+    font-size: 1rem;
     cursor: pointer;
     font-feature-settings: "liga" off;
     color: #f2f2f2;
@@ -68,6 +73,10 @@ export const FooterStyles = styled.div`
     font-feature-settings: "liga" off;
     color: #ffffff;
     width: 70%;
+  }
+
+  .footer-left-side p{
+    font-size: 14px;
   }
 
   .footer-right-side {

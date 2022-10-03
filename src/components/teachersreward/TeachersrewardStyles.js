@@ -1,49 +1,74 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const TeachersrewardStyles = styled.div`
+  font-family: "Inter";
+  font-style: normal;
+  /* border: 2px solid red; */
+  margin-top: 4%;
+  display: flex;
+  gap: 5%;
+  background: rgba(0, 0, 0, 0.03);
+  width: 100%;
+  padding: 4.5% 10%;
 
-    /* border: 2px solid red; */
-    margin-top: 4%;
+  .left-side {
+    width: 45%;
+  }
+
+  .quotes {
     display: flex;
-    gap: 6%;
-    background: rgba(0, 0, 0, 0.03);
-    width: 100;
-    padding: 4.5% 10%;
+    align-items: center;
+    position: relative;
+  }
 
-    .left-side{
-        /* border: 2px solid red; */
-        width: 45%;
-    }
+  #quote1 {
+    position: absolute;
+    width: 53px;
+    height: 182px;
+    left: -1rem;
+    top: -6rem;
+    font-weight: 400;
+    color: rgba(3, 67, 95, 0.1);
+  }
 
-    .left-side h1{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 39px;
-        line-height: 45px;
-        color: #03435F;
-        margin-bottom: 12%;
-        word-spacing: 3px;
-    } 
-    
-    .left-side h2{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 200;
-        font-size: 35px;
-        line-height: 55px;
-        color: #03435F;
-        margin-bottom: 4%;
-    }
+  #quote2{
+    position: absolute;
+    width: 53px;
+    height: 182px;
+    left: 22rem;
+    top: -1rem;
+    font-weight: 400;
+    color: rgba(3, 67, 95, 0.1);
+  }
 
-    .right-side{
-        /* border: 2px solid blue; */
-        width: 50%;
-    }
+  .left-side h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #03435f;
+    margin-bottom: 12%;
+    line-height: 39px;
+    width: 569px;
+    height: 78px;
+  }
 
-    .right-side img{
-        /* border: 2px solid blue; */
-        width: 100%;
-    }
+  .left-side h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 55px;
+    color: #03435f;
+    margin-bottom: 2%;
+  }
 
-`
+  .right-side {
+    width: 50%;
+  }
+
+  .right-side img {
+    width: 576px;
+    height: 516px;
+    left: 741px;
+    top: 66px;
+  }
+`;
